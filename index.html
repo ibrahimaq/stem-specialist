@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+</head>
+<body class="h-[2000px]">
+    <!--///////////// NAVBAR ////////////-->
+    <header class="fixed top-0 left-0 w-full bg-cyan-400 p-2">
+        <div class="md:max-w-[1200px] mx-auto relative flex justify-between">
+            <a href="/">SS</a>
+            <nav class="nav absolute translate-x-[1000px] transition-all duration-150 ease-in-out md:relative">
+                <ul class="">
+                    <li>Home</li>
+                    <li>Blogs</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <button type="button" class="burger flex flex-col justify-between items-end md:hidden">
+               <div class="bg-slate-700 h-[2px] w-[30px]"></div>
+               <div class="bg-slate-700 h-[2px] w-[20px]"></div>
+               <div class="bg-slate-700 h-[2px] w-[10px]"></div>
+            </button>
+        </div>
+    </header>
+</body>
+</html>
