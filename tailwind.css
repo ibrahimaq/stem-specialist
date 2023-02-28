@@ -1,3 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5 {
+    @apply text-dark;
+  }
+  p {
+    @apply text-bodyCopy;
+  }
+}
+
+
+.nav li {
+    @apply w-full md:w-fit md:ml-10;
+}
+
+.nav a {
+    @apply w-full block relative pl-8 mt-8 text-xl text-dark before:block before:absolute before:h-full before:left-5 before:top-0 before:w-[2px] before:bg-primary md:pl-0 md:mt-0 md:before:content-none;
+}
+
+.burger div {
+    @apply bg-dark h-[2px];
+}
+
+
+.services-card {
+    @apply mt-8 md:mt-0 flex flex-col items-center mx-4 rounded-md shadow-md py-5 px-5 md:w-[260px];
+}
+
+.services-card h4 {
+    @apply mt-4 text-xl text-center text-slate-700;
+}
+
+.services-card p {
+    @apply text-center mt-3 text-base font-light text-slate-600;
+}
+
+

@@ -8,24 +8,100 @@
     <script src="./script.js" defer></script>
     <title>Document</title>
 </head>
-<body class="h-[2000px]">
+<body class="h-[3000px]">
     <!--///////////// NAVBAR ////////////-->
-    <header class="fixed top-0 left-0 w-full bg-cyan-400 p-2">
-        <div class="md:max-w-[1200px] mx-auto relative flex justify-between">
-            <a href="/">SS</a>
-            <nav class="nav absolute translate-x-[1000px] transition-all duration-150 ease-in-out md:relative">
-                <ul class="">
-                    <li>Home</li>
-                    <li>Blogs</li>
-                    <li>Contact</li>
+    <header class="header fixed w-full py-3 px-5 z-[999]">
+        <div class="md:max-w-[1200px] flex justify-between md:mx-auto">
+            <a href="/" class="block">SS</a>
+            <nav class="nav absolute right-0 top-0 h-screen w-1/2 bg-white/30 backdrop-blur-lg rounded-sm translate-x-[1000px] transition-all duration-150 ease-in-out md:relative md:translate-x-[0px] md:h-full md:w-full md:bg-inherit md:backdrop-blur-0 md:rounded-none">
+                <ul class="mt-20 md:mt-0 md:flex md:flex-row md:justify-end">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
                 </ul>
             </nav>
-            <button type="button" class="burger flex flex-col justify-between items-end md:hidden">
-               <div class="bg-slate-700 h-[2px] w-[30px]"></div>
-               <div class="bg-slate-700 h-[2px] w-[20px]"></div>
-               <div class="bg-slate-700 h-[2px] w-[10px]"></div>
+            <button type="button" class="burger z-50 flex flex-col justify-between items-end md:hidden">
+               <div class='w-[30px] burger-top transition-all duration-150'></div>
+               <div class="w-[20px] burger-middle transition-all duration-150"></div>
+               <div class="w-[12px] burger-bottom transition-all duration-150"></div>
             </button>
         </div>
     </header>
+     <!--///////////// HERO ////////////-->
+    <section class="w-full bg-hero-mobile md:bg-hero-desktop bg-no-repeat bg-cover bg-cyanLight">
+        <div class="md:max-w-[1200px] mx-auto py-14 md:flex md:flex-row px-x">
+            <div class="md:w-2/5 mt-32">
+                <h1 class="text-4xl text-center md:text-left">Create your future with Stem Specialist</h1>
+                <p class="font-light mt-8 text-center md:text-left md:text-base text-dark">Re-imaging the you way learn with Stem Specialist. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat et pariatur molestias.</p>
+                <a href="#" class="block mt-8 md:mt-6 bg-primary py-3 px-4 w-3/5 text-center mx-auto md:mx-0 rounded-3xl text-white">Get Started</a>
+            </div>
+            <div class="md:w-3/5 mt-16">
+                <img src="./assets/undraw_online_learning_re_qw08.svg" alt="Online learning. Woman sitting infront of laptop.">
+            </div>
+        </div>
+    </section>
+    <!--///////////// SERVICES ////////////-->
+    <section class="py-14">
+        <h1 class="text-3xl text-center">What We Offer</h1>
+        <div class="md:max-w-[1200px] mx-auto">
+            
+            <ul class="flex flex-col mt-8 md:flex-row justify-center md:mt-20">
+                <li class="services-card">
+                    <div class="w-[40px] h-[40px]">
+                        <img src="./assets/beaker.svg" alt="" class="block">
+                    </div>
+                    <h4>STEM Subjects</h4>
+                    <p>Specialists in Science and Mathematics.</p>
+                </li>
+                <li class="services-card">
+                    <div class="w-[40px] h-[40px]">
+                        <img src="./assets/computer.svg" alt="" class="block">
+                    </div>
+                    <h4>Online Tutoring</h4>
+                    <p>Online learning for added flexibility, self-paced and more comfort.</p>
+                </li>
+                <li class="services-card">
+                    <div class="w-[40px] h-[40px]">
+                        <img src="./assets/avatar.svg" alt="" class="block">
+                    </div>
+                    <h4>Personalised</h4>
+                    <p>One-to-One approach for a better learning environment.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!--///////////// REVIEWS ////////////-->
+    <section class="bg-reviews-img relative mt-14 pt-5 h-[70vh] g-no-repeat bg-cover">
+        <h1 class="text-center text-3xl px-x">What people have said about us</h1>
+
+            <div class="max-w-[1200px] mx-auto mt-14">
+            <div class="pb-16 relative backdrop-blur-md bg-white/30 rounded-md md:max-w-[800px] mx-auto px-x">
+                <div class="w-[40px] relative -top-6"><img src="/assets/quote-left-solid.svg" alt=""></div>
+                <div>
+                    <p class="text-center text-base text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit aliquid omnis, necessitatibus ipsum dicta sunt facilis eligendi recusandae velit mollitia autem sit architecto ipsam a aut est repellat officia eos nostrum totam possimus harum! Alias?</p>
+                    <p class="italic text-center mt-5 font-light text-sm text-slate-600"><span role="presentation">~ </span>Becky A.</p>
+                </div>
+                <div class="absolute right-5 -bottom-5">
+                    <button class="w-[35px] rounded-sm bg-primary mr-2"><img src="/assets/arrow-left.svg" alt="" class=""></button>
+                    <button class="w-[35px] rounded-sm bg-primary"><img src="/assets/arrow-right.svg" alt="" class=""></button>
+                </div>
+            </div>
+            </div>
+<!--            
+        <div class="absolute bottom-0 w-full">
+            <img src="/assets/wave.svg" alt="">
+        </div> -->
+      
+        <svg id="wave" class="absolute bottom-0" viewBox="0 0 1440 310" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill="#FFF" d="M0,31L60,51.7C120,72,240,114,360,129.2C480,145,600,134,720,118.8C840,103,960,83,1080,98.2C1200,114,1320,165,1440,160.2C1560,155,1680,93,1800,62C1920,31,2040,31,2160,31C2280,31,2400,31,2520,72.3C2640,114,2760,196,2880,191.2C3000,186,3120,93,3240,62C3360,31,3480,62,3600,67.2C3720,72,3840,52,3960,77.5C4080,103,4200,176,4320,180.8C4440,186,4560,124,4680,113.7C4800,103,4920,145,5040,170.5C5160,196,5280,207,5400,180.8C5520,155,5640,93,5760,77.5C5880,62,6000,93,6120,129.2C6240,165,6360,207,6480,191.2C6600,176,6720,103,6840,98.2C6960,93,7080,155,7200,175.7C7320,196,7440,176,7560,180.8C7680,186,7800,217,7920,237.7C8040,258,8160,269,8280,258.3C8400,248,8520,217,8580,201.5L8640,186L8640,310L8580,310C8520,310,8400,310,8280,310C8160,310,8040,310,7920,310C7800,310,7680,310,7560,310C7440,310,7320,310,7200,310C7080,310,6960,310,6840,310C6720,310,6600,310,6480,310C6360,310,6240,310,6120,310C6000,310,5880,310,5760,310C5640,310,5520,310,5400,310C5280,310,5160,310,5040,310C4920,310,4800,310,4680,310C4560,310,4440,310,4320,310C4200,310,4080,310,3960,310C3840,310,3720,310,3600,310C3480,310,3360,310,3240,310C3120,310,3000,310,2880,310C2760,310,2640,310,2520,310C2400,310,2280,310,2160,310C2040,310,1920,310,1800,310C1680,310,1560,310,1440,310C1320,310,1200,310,1080,310C960,310,840,310,720,310C600,310,480,310,360,310C240,310,120,310,60,310L0,310Z"/></svg>
+    </section>
+    <section class="">
+        hello
+    </section>
 </body>
 </html>
