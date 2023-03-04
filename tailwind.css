@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100,300;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -23,12 +23,12 @@
 }
 
 .nav a {
-    @apply w-full block relative pl-8 mt-8 text-xl text-dark before:block before:absolute before:h-full before:left-5 before:top-0 before:w-[2px] before:bg-primary md:pl-0 md:mt-0 md:before:content-none;
+    @apply w-full block relative pl-8 mt-8 text-lg md:text-xl text-dark before:block before:absolute before:h-full before:left-5 before:top-0 before:w-[2px] before:bg-primary md:pl-0 md:mt-0 md:before:content-none;
 }
 
-.burger div {
+/* .burger div {
     @apply bg-dark h-[2px];
-}
+} */
 
 
 .services-card {
@@ -41,6 +41,21 @@
 
 .services-card p {
     @apply text-center mt-3 text-base font-light text-slate-600;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#slides-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#slides-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.slide {
+  flex: 1 0 100%;
 }
 
 
