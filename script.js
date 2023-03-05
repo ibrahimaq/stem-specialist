@@ -58,30 +58,6 @@ const changeNavBg = () => {
     header.classList.add("bg-transparent");
   }
 
-  // if (window.innerWidth > 767) {
-  //   // from mobile to desktop
-  //   if (window.scrollY > 140 && header.classList.contains('bg-white')) {
-  //     header.classList.remove('bg-white')
-  //     header.classList.add("backdrop-blur-md", "bg-white/40");
-  //   } else if (window.scrollY > 140 && !header.classList.contains("bg-white")) {
-  //       header.classList.remove('bg-transparent');
-  //       header.classList.add("backdrop-blur-md", "bg-white/40");
-  //   }
-  // } else {
-  //   if (
-  //     window.scrollY > 140 &&
-  //     header.classList.contains("backdrop-blur-md", "bg-white/40")
-  //   ) {
-  //     header.classList.remove("backdrop-blur-md", "bg-white/40");
-  //     header.classList.add("bg-white");
-  //   } else if (
-  //     window.scrollY > 140 &&
-  //     !header.classList.contains("backdrop-blur-md", "bg-white/40")
-  //   ) {
-  //     header.classList.remove("bg-transparent");
-  //     header.classList.add("bg-white");
-  //   }
-  // }
 };
 
 document.addEventListener("scroll", changeNavBg);
